@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgb(230, 200, 230) ;
+            text-align: center;
+           
+        }
+        span{
+            margin-right: 25px;
+        }
+        form{
+            margin:200px
+        }
+        .fa{
+            color: red;
+            border-radius: 50%;
+            transform: scale(2);
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            padding: 10px;
+            transition: transform 2s,padding 2s ;
+        }
+        @keyframes example{
+            0% {width:50px;color:red}
+            25% {height:40px;color: blue;}
+            50% {height:30px;color:rgb(241, 121, 233)}
+            100% {width:30px;color:rgb(80, 212, 82)};
+        }
+        
+        input[type="submit"]{
+            border: none;
+            background-color:darkmagenta ;
+            color: white;
+            padding:8px;
+            font-weight:300;
+            font-size:medium;
+            border-radius: 10px;
+            width:100px
+        }
+        h1, p{
+            color: darkmagenta;
+        }
+        p{
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+    <h1><span class="fa fa-check-circle"></span>Thank You</h1>
+    <p>Thank You For Signing Up now, login and enjoy our Services</p>
+    <input type="submit" value="Login" formaction="./login.html"> 
+    </div>
+</form>
+</body>
+</html>

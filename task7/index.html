@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../images/istockphoto-1500563478-170667a.webp" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            width:500px;
+            margin-left: 30%; 
+            font-family: sans-serif;
+        }
+        .sub-container{
+            background-color: blue;
+            color:white ;
+            padding: 15px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes example{
+            0% {background-color:blue;}
+            25% {background-color: red;}
+            50% {background-color:yellow}
+            100% {background-color:chocolate;}
+        }
+          
+
+        
+        h1, .headpara{
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left:50px;
+            padding: 2px;
+            word-spacing: 1px;
+        }
+        form{
+            padding: 20px;
+            background-color:white;
+            color: blue;
+        }
+        label,input{
+            margin: 5px;
+        }
+        #mail{
+            margin-left: 90px;
+        }
+        #mbl, #email{
+            width: 205px;
+        }
+        .star{
+        color: red;
+        font-size: larger;
+        }
+    input[type="submit"], input[type="reset"]{
+        background-color: blue;
+        color: white;
+        border-style: none;
+        border-radius: 10px;
+        padding:10px;
+        font-size:large;
+        width:100px
+    }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="sub-container">
+        <h1>Application Form</h1>
+        <p class="headpara">Fill the form to register to access your creditails</p>
+        </div>
+        <form>
+            <p>
+            <label for="fname">Name <span class="star">*</span></label>
+            <input id="fname" type="text" name="fname" placeholder="firstname">
+            <input id="lname" type="text" name="lname" placeholder="lastname">
+            </p>
+            
+            <p><label for="mbl">Phone Number <span class="star">*</span></label>
+            <label for="email" id="mail"> Email <span class="star">*</span></label><br>
+            <input type="tel" id ="mbl" name="mbl" pattern="[0-9]{10}">
+            <input type="email" id="email" name="email" placeholder="Vamshi234@gmail.com"></p>
+
+            <p><label for="birthdate">Birth-Date <span class="star">*</span></label>
+            <input type="datetime-local" name="birthdate" id="birthdate"></p>
+
+            <p><label for="gender">Gender <span class="star">*</span></label><br>
+            <input name="gender" type="radio" id="gender" value="male">
+            <label for="gender" >Male</label>
+            <input name="gender" type="radio" id="gender" value="female">
+            <label for="gender" >Female</label>
+            <input name="gender" type="radio" id="gender" value="Other">
+            <lable for="gender" >Other</lable></p>
+            
+            <p><label for="document" class="fa fa-drivers-license"> Choose a Proof Document:</label>
+            <select name="document" id="document" >
+                <option value="Aadhar">Aadhar</option>
+                <option value="driving-license" >Driving License</option>
+                <option value="Voter-ID" n>voter ID</option>
+                <option value="Passport" >Passport</option>
+            </select><input type="file" id="file" name="document"></p>
+
+            <p><label for="skillset">Choose your Skillset</label>
+            <input list="skillsets" name="skillset" id="skillsets">
+                <datalist id="skillsets">
+                <option value="HTML" >
+                <option value="CSS">
+                <option value="JAVASCRIPT">
+                <option value="PYTHON">
+                <option value="JAVA">
+                </datalist><br><br>
+                <label for="message" class="fa fa-comments"> Message:</label></p>
+                <textarea rows="10" cols="55" id="message" name="message" ></textarea><br>
+            
+            <input type="submit">
+            <input type="reset">
+
+
+        </form>
+    </div>
+</body>
+</html>

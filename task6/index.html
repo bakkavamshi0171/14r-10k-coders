@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+    
+        }
+        .container{
+            max-width: 600px;
+            max-height: fit-content;
+            font-family: sans-serif;
+            border: 2px solid black;
+            margin-left:30%
+
+        }
+        h3{
+            background-color: blue;
+            color: white;
+            padding:10px;
+            font-size: 25px;
+            font-weight: 900;
+            margin: 0;
+            text-align: center;
+        }
+        .star{
+            color: red;
+            font-size: larger;
+        }
+        label{
+            padding:30px;
+            position: relative;
+            left:25px;
+        }
+        input{
+            border-right: none;
+            border-left-style: none;
+            border-top: none;
+            position: relative;
+            left:55px;
+            margin-top: 20px;
+        }
+        input[type=submit]{
+            margin-bottom: 25px;
+            font-size: larger;
+            width:150px;
+            border-style: none;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #lname{
+            margin-left: 30px;
+            width:230px;
+        }
+        #fname{
+            
+            width:230px;
+        }
+        #address{
+            width: 500px;
+        }
+        #email{
+            
+            width:250px
+        }
+        .sub-container{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+   <h3>Registeration Form</h3>
+    <p class="firstp"><label for="fname" >Name <sup class="star">*</sup></label><br>
+        <input type="text" id="fname" name="fname" placeholder="firstname" required>
+        <input  id="lname" name="lname" type="text" placeholder="lastname"></p>
+    
+   <p><label for="number">Moblie No: <sup class="star">*</sup></label><br>
+    <input id="number" type="tel" pattern="[0-9]{10}" required></pv>
+
+     <p>  <label for="email">Email <sup class="star">*</sup></label><br>
+    <input type="email" name="email" id="email" placeholder="vasu123@gamil.com"></p>
+    
+    <p> <label for="dob">Date of Birth <sup class="star">*</sup></label><br>
+        <input type="datetime-local" name="dob" id="dob"></p>
+   
+
+    <p><label for="address">Address</label><br>
+    <input id="address" type="text" size="50" autofocus></p>
+
+    <p><label for="color">Chose your dress code Color</label><br>
+    <input type="color" name="color" id="color"></p>
+
+    <p><label for="document" >Certifictes <sup class="star">*</sup></label><br>
+        <input type="file" name="document" id="document"></p>
+        <p><label for="password">Password</label>
+        <input type="password" name="password"></p>
+
+    <input type="submit" >
+    </div>
+    </form>
+</body>
+</html>

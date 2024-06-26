@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url("../images/istockphoto-1500563478-170667a.webp");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        background-color: #fff5;
+        backdrop-filter: blur(9px);
+        box-shadow: 0.4 .8rem black;
+        
+        border-radius: .8rem;
+        margin:10px;
+        max-height: fit-content;
+    }
+    .header {
+        background-color: #fff;
+        width:100%;
+        padding:1rem;
+        border-radius:8px;
+    }
+    h1{
+        margin-left: 30px;
+    }
+    tbody{
+        height:90%;
+        max-height: 89%;
+        background-color: #fffb;
+    }
+    table, th , tr{
+        padding:1rem;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 10px; 
+    }
+    img{
+        border-radius: 50%;
+        width:80px;
+    }
+    thead{
+        background-color: rgb(211, 206, 206);
+        position: sticky;
+    }
+    th{
+        padding:25px;
+        text-align: center;
+    }
+    td{
+        padding:25px 
+    }
+    .delivered{
+        background-color: rgb(66, 182, 66);
+        padding:10px;
+        color: #fff;font-size: 15px;
+        border-radius: 10px;
+        border:none;
+        width:100px;
+    }
+    .shipping{
+        background-color: rgb(213, 213, 107);
+        padding:10px;
+        color: #fff;font-size: 15px;
+        border-radius: 10px;
+        border:none;
+         width:100px;
+    }
+    .cancel{
+        background-color: rgb(233, 80, 80);
+        padding:10px;
+        color: #fff;font-size: 15px;
+        border-radius: 10px;
+        border:none;
+         width:100px;
+    }
+    tbody tr:hover{
+        background-color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Customer's Data</h1>
+        </div>
+    <table >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Customer</th>
+                <th>Order Status</th>
+                <th>Location</th>
+                <th>Ordered item and Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#00261188</td>
+                <td><p>Krishna</p></td>
+                <td><button class="shipping">Shipping</button></td>
+                <td><p>India, Hyderabad</p></td>
+                <td> <a href="https://www.amazon.in/Reiki-Crystal-Products-Bracelet-Healing/dp/B07FX4H3JK"><img src="https://m.media-amazon.com/images/I/61aN8w8qhRL._AC_UY1100_.jpg" height="60" ></a><span>12-06-2024</span> </td>
+                <td><p>₹699/-</p></td>
+            </tr>
+            <tr>
+                <td>#15247831</td>
+                <td><p>Prasad G</p></td>
+                <td><button class="delivered">Delivered</button></td>
+                <td><p>India, Delhi</p></td>
+                <td><a href="https://www.amazon.in/AmazonBasics-Mini-Backpack-Outdoor-Black/dp/B0BRKFXT9Z"><img src="https://m.media-amazon.com/images/I/61VnaOrJFRL.jpg" height="100"></a><span>09-06-2024</span></td>
+                <td><p>₹999/-</p></td>
+            </tr>
+            <tr>
+                <td>#95864123</td>
+                <td><p>Kavitha P</p></td>
+                <td><button class="cancel">Cancelled</button></td>
+                <td><p>India, Hyderabad</p></td>
+                <td><a href="https://www.amazon.in/Childrens-Classics-Box-Set-books/dp/9389136733"><img src="https://m.media-amazon.com/images/I/71Lk0nnEyOL._AC_UF1000,1000_QL80_.jpg" height="100"></a><span>18-06-2024</span></td>
+                <td><p>₹1599/-</p></td>
+            </tr>
+            <tr><td>#78945615</td>
+                <td><p>Sri harika</p></td>
+                <td><button class="delivered">Delivered</button></td>
+                <td><p>Canada, Alberta</p></td>
+                <td><a href="https://www.amazon.in/CLASSY-Professional-makeup-girls-BRIDAL/dp/B0CF6LG8L1"><img src="https://ecommercephotographyindia.com/assets/img/gallery/cosmetics-turquoise-bg.jpg" height="100"></a><span>06-06-2024</span></td>
+                <td><p>₹3999/-</p></td>
+
+            </tr>
+            <tr>
+                <td>#14756123</td>
+                <td><p>Srikanth</p></td>
+                <td><button class="shipping">Shipping</button></td>
+                <td><p>Usa, wall street</p></td>
+                <td><a href=""><img src="https://m.media-amazon.com/images/I/71NrPRCvFRL.jpg" height="100"></a><span>16-06-2024</span></td>
+                <td><p>₹20,999/-</p></td>
+            </tr>
+            <tr>
+                <td>#56489572</td>
+                <td><p>Shiva</p></td>
+                <td><button class="delivered">Delivered</button></td>
+                <td><p>India, Pune</p></td>
+                <td><a href=""><img src="https://m.media-amazon.com/images/I/51z8OucoEnL.jpg" height="100"></a><span>10-06-2024</span></td>
+                <td><p>₹359/-</p></td>
+            </tr>
+            <tr>
+                <td>#11224546</td>
+                <td><p>Bharadwaj</p></td>
+                <td><button class="cancel">Cancelled</button></td>
+                <td><p>India, Hyderabad</p></td>
+                <td><a href=""><img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1563378212-amazon-echo-dot-3-1563376152.jpg?crop=1xw:1xh;center,top&resize=980:*" height="100"></a><span>15-06-2024</span></td>
+                <td><p>₹2099/-</p></td>
+            </tr>
+        </tbody>
+        
+    </table>
+    </div>
+</body>
+</html>
+
+
+<!-- <table>
+    <tr>
+        <th rowspan="2" colspan="3"><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></th>
+        <th colspan="3"><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></th>
+      
+    </tr>
+    <tr>
+        
+        <td colspan="3"><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></td>
+       
+    <tr>
+        <td rowspan="2" colspan="2"><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></td>
+        <td colspan="3"><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></td>
+        
+    </tr>
+    <tr>
+        <td colspan="2" ><img src="../images/istockphoto-1500563478-170667a.webp" height="50px"></td>
+    </tr>
+</table> -->
